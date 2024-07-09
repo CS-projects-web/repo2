@@ -99,6 +99,7 @@ insert into borrower values(‘sachin’,’5555’);
 
 
 1. Find all the customers who have atleast two accounts at the Main branch. 
+
 select distinct(customer_name), count(*) 
 from account a, depositor d 
 where a.accno=d.accno 
@@ -108,6 +109,7 @@ group by d.customer_name
 having count(*)>=2;
 
 2. Find all the customers who have an account at all the branches located in a specific city. 
+
 select d.customer_name 
 from account a, depositor d, branch b 
 where b.branch_name=a.branch_name and a.accno=d.accno 
@@ -118,6 +120,7 @@ where branch_city=’bangalore’)
 group by customer_name; 
 
 3. Demonstrate how you delete all account tuples at every branch located in a specific city. 
+
 delete from account 
 where branch_name in (select branch_name 
 from branch 
