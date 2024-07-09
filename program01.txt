@@ -74,9 +74,6 @@ INSERT INTO works_on (Essn, Pno, Hours) values (987654321, 20, 15.0);
 INSERT INTO works_on (Essn, Pno, Hours) values (888665555, 20, 0.0);
 
 
-
-
-
 SQL STATEMENT FOR INSERTING VALUES INTO DEPENDENT TABLE
 INSERT INTO dependent (Essn, Dependent_name, Sex, Bdate, Relationship) values (333445555, ‘Alice’, ‘F’, ’05-APR-1986′, ‘Daughter’);
 INSERT INTO dependent (Essn, Dependent_name, Sex, Bdate, Relationship) values (333445555, ‘Theodore’, ‘M’, ’25-OCT-1983′, ‘Son’);
